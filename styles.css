@@ -13,6 +13,14 @@ nav{
     top: 0px;
     position: absolute;
     width: 100%;
+    height: 35px;
+    
+}
+a
+{   color: white;
+    text-decoration: none;
+    padding: 2rem;
+   
 }
 @media (max-width:480px) {
     nav{
