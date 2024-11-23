@@ -1,31 +1,96 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: 0%;
+    color: white;
 }
-body
-{
+
+body {
     font-family: 'Segoe UI', system-ui, sans-serif;
-    background-color:#f5f5f5;
+    background-color: #FFA07A;
 }
-nav{
-    background: linear-gradient(to right, green, rgb(126, 126, 250));
-    top: 0px;
-    position: absolute;
+
+nav {
+    background-color: #CD5C5C;
+    display: flex;
+    position: fixed;
+    top: 0;
     width: 100%;
-    height: 35px;
-    
+    height: 5vh;
+    margin: 0;
+    margin-bottom: 3rem;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-evenly;
+    z-index: 1000;
 }
-a
-{   color: white;
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+
+}
+
+a {
     text-decoration: none;
-    padding: 2rem;
-   
+
+
 }
+
+section {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    width: 80%;
+    background-color: #FA8072;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: auto;
+}
+
+.boton {
+    background-color: #E9967A;
+    padding: 0.5rem;
+    width: max-content;
+    border-radius: 1rem;
+}
+
+.boton:hover {
+    background-color: #CD5C5C;
+}
+/* celulares */
 @media (max-width:480px) {
-    nav{
-        bottom: 0px;
-        position: absolute;
+    nav {
         top: auto;
+        bottom: 0;
+        height: 8vh;
+        margin-bottom: 0%;
+    }
+
+}
+/* tablets vertical */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        
+        background-color: green;
+    }
+    nav {
+        top: auto;
+        bottom: 0;
+        height: 8vh;
+        margin-bottom: 0%;
+    }
+}
+/* tablets horizontal */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        
+        background-color: blue;
     }
 }
