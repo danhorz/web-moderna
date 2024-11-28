@@ -2,12 +2,19 @@
     margin: 0%;
     padding: 0%;
     box-sizing: 0%;
-    color: white;
+    color: black;
 }
 
 body {
     font-family: 'Segoe UI', system-ui, sans-serif;
     background-color: #FFA07A;
+}
+h2
+{
+   
+    text-align: center;
+    height: max-content;
+    
 }
 
 nav {
@@ -23,17 +30,24 @@ nav {
     gap: 10px;
     justify-content: space-evenly;
     z-index: 1000;
+    font-weight: 700;
 }
 
 main {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    
     align-items: center;
     gap: 50px;
     margin-top: 8vh;
     margin-bottom: 8vh;
+    justify-content: center;
 
+}
+.img
+{
+    width: 100%;
+    height: 200px;
 }
 
 a {
@@ -41,17 +55,26 @@ a {
 
 
 }
+p{
+    text-align: justify;
+    padding: 1rem;
+}
 
 section {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    justify-items: center;
 
-    gap: 10px;
-    width: 80%;
-    background-color: #FA8072;
-    padding: 1rem;
+    
+    width: 400px;
+    background-color: white;
+    
     border-radius: 1rem;
-    height: auto;
+    
+    height: 60%;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding-bottom: 5rem;
+    overflow-y: scroll;
 }
 
 .boton {
@@ -59,38 +82,30 @@ section {
     padding: 0.5rem;
     width: max-content;
     border-radius: 1rem;
+   
+    font-weight: 700;
+    
 }
 
 .boton:hover {
     background-color: #CD5C5C;
 }
 /* celulares */
-@media (max-width:480px) {
+@media (max-width:600px) {
     nav {
         top: auto;
         bottom: 0;
         height: 8vh;
         margin-bottom: 0%;
+    }
+    section{
+       
+        padding-bottom: 5rem;
+    }
+    .boton{
+        padding: 1.2rem;
     }
 
 }
-/* tablets vertical */
-@media (min-width: 481px) and (max-width: 768px) {
-    body {
-        
-        background-color: green;
-    }
-    nav {
-        top: auto;
-        bottom: 0;
-        height: 8vh;
-        margin-bottom: 0%;
-    }
-}
+
 /* tablets horizontal */
-@media (min-width: 769px) and (max-width: 1024px) {
-    body {
-        
-        background-color: blue;
-    }
-}
